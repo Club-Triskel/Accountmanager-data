@@ -4,7 +4,7 @@ import psycopg2
 import csv
 import time
 import pyotp
-
+from dotenv import load_dotenv
 
 import vrchatapi
 from vrchatapi.api import authentication_api
@@ -13,6 +13,8 @@ from vrchatapi.models.two_factor_auth_code import TwoFactorAuthCode
 from vrchatapi.rest import ApiException
 
 from http.cookiejar import LWPCookieJar
+
+load_dotenv()
 
 csv_file = 'triskel.csv'
 
