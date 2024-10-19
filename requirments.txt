@@ -3,3 +3,4 @@ requests
 vrchatapi
 pyotp
 jsonify
+python-dotenv
